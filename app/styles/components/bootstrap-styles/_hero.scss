@@ -1,0 +1,17 @@
+/*hero banner*/
+.hero {
+	display: none;
+}
+
+
+
+@media screen and (min-width: 992px) {
+	.hero {
+		display: block;
+		width: 100%;
+		height: 300px;
+		margin: 0px 0px 10px;
+		background: transparent url('../images/banner-one.jpg') no-repeat;
+		background-size: 100% 300px;
+	}
+}

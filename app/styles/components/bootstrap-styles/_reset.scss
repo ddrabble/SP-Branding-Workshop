@@ -1,0 +1,22 @@
+//SharePoint prefers content-box. reset rows and cols to be border box
+html {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container, .row, div[class^="col-"] {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;   
+
+	&::before, &::after {
+		-webkit-box-sizing: border-box;
+				box-sizing: border-box;   
+	}
+}

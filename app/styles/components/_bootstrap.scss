@@ -1,0 +1,36 @@
+@import "bootstrap-loader";
+
+//--
+@import "font";
+
+
+@import "bootstrap-styles/reset";
+
+//--
+@import "bootstrap-styles/body";
+
+
+@import "bootstrap-styles/header";
+@import "bootstrap-styles/header-social";
+
+//--
+@import "bootstrap-styles/top-navigation";
+
+@import "bootstrap-styles/headline";
+@import "bootstrap-styles/section";
+@import "bootstrap-styles/community-list";
+@import "bootstrap-styles/our-homes";
+
+@import "bootstrap-styles/footer";
+
+@import "bootstrap-styles/hero";
+
+
+//post sharepoint install
+//@import "bootstrap-styles/sharepoint/font"; //comment out "font"
+//@import "bootstrap-styles/sharepoint/body"; //comment out "bootstrap-styles/body"
+//@import "bootstrap-styles/sharepoint/top-navigation"; //comment out "bootstrap-styles/top-navigation"
+
+//new
+//@import "bootstrap-styles/sharepoint/logo";
+//@import "bootstrap-styles/sharepoint/search-box";

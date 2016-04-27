@@ -1,0 +1,107 @@
+/*our homes*/
+.our-homes {
+	border-bottom: none;
+
+	> .row {
+		padding-top: 40px;
+
+		> .col-md-4 {
+		    margin-top: 50px;
+
+		    @media screen and (min-width: 768px) {
+				margin-top: 0px;
+			}
+		}
+	}
+
+	.contentbox {
+		margin: 10px 20px 20px;
+		width: auto;
+		min-height: 160px;
+		display: block;
+		position: relative;
+	}
+
+	.our-homes-col-wrapper {
+		position: relative;
+		min-height: 280px;
+		padding-bottom: 10px;
+		
+		background: none repeat scroll 0 0 $color-grey-light;
+		border: 1px $color-grey-medium solid;
+		border-color: rgba(0, 0, 0, 0);
+
+		@media screen and (min-width: 768px) {
+			min-height: 290px;
+
+			border: 1px solid $color-grey-medium;
+		}
+	}
+
+	.header {
+		position: relative;
+		text-align: center;
+		left: 50%;
+		width: 100px;
+		height: 100px;
+		margin-top: -50px;
+
+		IMG {
+			display: block;
+			float: left;
+			position: relative;
+			right: 50%;
+		}
+	}
+
+	.homes {
+		IMG {
+			float: left;
+			max-width: 230px;
+			width: 100%;
+			padding: 0px 5%;
+		}
+
+		> SPAN {
+			float: left;
+			display: block;
+			width: 320px;
+			height: auto;
+			padding-left: 20px;
+
+			A {
+				float: right;
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.views {
+		UL, LI {
+			margin: 0px;
+			padding: 0px;
+			list-style: none inside none;
+		}
+
+		LI {
+			float: left;
+			display: block;
+			width: 50%;
+			text-align: center;
+			padding-bottom: 10px;
+
+			&.full {
+				width: 100%;
+			}
+
+			A, A:link, A:visited {
+				color: $color-grey-dark;
+
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+}
+/*end our homes*/

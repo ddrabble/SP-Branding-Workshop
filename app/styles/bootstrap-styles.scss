@@ -1,0 +1,16 @@
+
+// IE10 + Windows 8 Phone viewport fix
+// ------------------------------------------
+
+@-ms-viewport{
+    width: device-width;
+}
+
+//variables
+@import "variables/color";
+
+//use Bootstrap grid and its components
+//@import "components/bootstrap"
+
+//use Bootstrap grid and its components ready for SP
+@import "components/bootstrap-sharepoint"

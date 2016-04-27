@@ -1,0 +1,36 @@
+.headline {
+    text-align: center;
+	//border-bottom: 1px $color-grey-dark solid;
+	margin: 10px 0px;
+
+	@media screen and (min-width: 992px) {
+		margin: 0px 0px 10px;
+	}
+
+	H2, H4 {
+		margin: 0px;
+		padding: 0px;
+		padding-bottom: 5px;
+
+		font-family: mensch, Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		line-height: 1em;
+		text-transform: uppercase;
+	}
+
+	H2 {
+	    text-align: center;
+		
+		color: $color-text;
+	
+		font-size: 36px;
+	}
+
+	H4 {
+	    text-align: center;
+		
+		color: $color-text;
+		
+		font-size: 24px;
+	}
+}

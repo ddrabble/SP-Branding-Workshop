@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<pnp:ProvisioningTemplate ID="SPECIALTEAM" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
+  <pnp:WebSettings NoCrawl="false" MasterPageUrl="_catalogs/MasterPage/seattle.master" />
+  
+  <pnp:ContentTypes>
+    <pnp:ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900A952540D2E5F498B9B1B03E874BDA6A1" Name="Demo Homepage" Description="Demo Homepage Content Type" Group="Page Layout Content Types Demo">
+      <pnp:FieldRefs>
+        <pnp:FieldRef ID="d3429cc9-adc4-439b-84a8-5679070f84cb" /> <!--byline-->
+        <pnp:FieldRef ID="038d1503-4629-40f6-adaf-b47d1ab2d4fe" /> <!--company-->
+		<pnp:FieldRef ID="3de94b06-4120-41a5-b907-88773e493458" /> <!--product image-->
+		<pnp:FieldRef ID="f55c4d88-1f2e-4ad9-aaa8-819af4ee7ee8" /> <!--page content-->
+		<pnp:FieldRef ID="3894ec3f-4674-4924-a440-8872bec40cf9" /> <!--page icon-->
+		<pnp:FieldRef ID="b66e9b50-a28e-469b-b1a0-af0e45486874" /> <!--keywords-->
+		<pnp:FieldRef ID="66f500e9-7955-49ab-abb1-663621727d10" /> <!--image caption-->
+      </pnp:FieldRefs>
+    </pnp:ContentType>
+	<pnp:ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39009B0A70B1BE094580931EBAEEE2AE6856" Name="Demo Content" Description="Demo Content Content Type" Group="Page Layout Content Types Demo">
+    </pnp:ContentType>
+	<pnp:ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002D76EEE3BB7E459AB21F564ADEF1044F" Name="Demo Property" Description="Demo Property Content Type" Group="Page Layout Content Types Demo">
+      <pnp:FieldRefs>
+        <pnp:FieldRef ID="b66e9b50-a28e-469b-b1a0-af0e45486874" /> <!--keywords-->
+      </pnp:FieldRefs>
+    </pnp:ContentType>
+  </pnp:ContentTypes>
+		  
+</pnp:ProvisioningTemplate>

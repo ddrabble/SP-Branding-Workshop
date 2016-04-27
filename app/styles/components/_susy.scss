@@ -1,0 +1,78 @@
+//susy loader
+@import "../../src/susy-master/sass/susy";
+
+
+#s4-titlerow {
+
+	
+	@include container(80em);
+
+	@include susy-breakpoint(1px767px) {
+		height: auto;
+	}
+
+	#titleAreaBox, #titleAreaRow {
+		display: block;
+		padding: 0px;
+	}
+
+	#siteIcon {
+		@include span(12 of 12);
+
+		margin-left: 0px;
+
+		padding-left: 15px;
+
+		text-align: left;
+
+		@include susy-breakpoint(768px, $susy) {
+			@include span(3 of 12 border-box);
+		}
+
+		.ms-siteicon-img {
+		    max-width: 100%;
+		}
+	}
+
+	.ms-breadcrumb-box {
+		@include span(12 of 12);
+
+		margin-left: 0px;
+		min-width: 0px;
+
+		padding-right: 15px;
+
+		@include susy-breakpoint(768px, $susy) {
+			@include span(9 of 12 border-box last);
+		}
+	}
+}
+
+
+
+#contentRow { @include container(80em); }
+
+#sideNavBox {
+	@include span(12 of 12);
+
+	margin-left: 0px;
+
+	padding-left: 15px;
+
+	@include susy-breakpoint(768px, $susy) {
+		@include span(3 of 12 border-box);
+	}
+}
+
+#contentBox {
+	@include span(12 of 12);
+
+	margin-left: 0px;
+	min-width: 0px;
+
+	padding-right: 15px;
+
+	@include susy-breakpoint(768px, $susy) {
+		@include span(9 of 12 border-box last);
+	}
+}

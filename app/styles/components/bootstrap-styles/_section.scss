@@ -1,0 +1,29 @@
+.section {
+	border-bottom: 1px solid $color-grey-dark;
+	margin-bottom: 10px;
+
+	.heading {
+		margin-bottom: 10px;
+		text-align: left;
+	}
+
+	H2 {
+		margin: 0px;
+		padding: 0px;
+
+		font-family: mensch, Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		line-height: 1em;
+		text-transform: uppercase;
+
+		&.heading {
+			color: #444;
+			font-size: 30px;
+
+			&:before {
+				content: "//";
+				padding-right: 10px;
+			}
+		}
+	}
+}

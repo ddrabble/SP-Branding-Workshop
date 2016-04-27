@@ -1,0 +1,14 @@
+
+// IE10 + Windows 8 Phone viewport fix
+// ------------------------------------------
+
+@-ms-viewport{
+    width: device-width;
+}
+
+//variables
+@import "variables/color";
+
+//use Susy grid and its compoments
+@import "components/susy"
+

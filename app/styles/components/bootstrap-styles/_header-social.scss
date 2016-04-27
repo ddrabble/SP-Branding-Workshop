@@ -1,0 +1,92 @@
+HEADER {
+	.social {
+		@include clearfix();
+		
+		box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+
+		position: absolute;
+		top: -39px;
+		right: 15px;
+		height: 32px;
+		padding: 0px 7px 7px;
+
+		border-radius: 0px 0px 0px 5px;
+		-moz-border-radius: 0px 0px 0px 5px;
+		-webkit-border-radius: 0px 0px 0px 5px;
+
+		background: $color-secondary none;
+
+		&.down {
+			top: 0px;
+
+			A {
+				&.social-toggle {
+					background-position: 10px -25px;
+				}
+			}
+		}
+
+		UL {
+			display: block;
+			margin: 0px;
+			padding: 0px;
+
+			LI {
+				float: left;
+				display: block;
+				padding-left: 7px;
+
+				&:first-child {
+					padding-left: 0px;
+				}
+
+				A {
+					display: block;
+					width: 32px;
+					height: 32px;
+				}
+			}
+		}
+
+		A {
+			&.social-toggle {
+				box-sizing: content-box;
+				-moz-box-sizing: content-box;
+				-webkit-box-sizing: content-box;
+
+				display: block;
+				position: absolute;
+				bottom: -20px;
+				right: 0px;
+				padding: 0px 10px 8px 10px;
+				height: 14px;
+				width: 16px;
+
+				text-indent: -9999px;
+				border-radius: 0px 0px 5px 5px;
+
+				-moz-border-radius: 0px 0px 5px 5px;
+				-webkit-border-radius: 0px 0px 5px 5px;
+				-webkit-transition: all 0s ease;
+				-moz-transition: all 0s ease;
+				-o-transition: all 0s ease;
+				transition: all 0s ease;
+
+				background: $color-secondary url('../images/icon-arrows-vert.png') no-repeat 10px 0px;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+
+		.csstransforms.csstransitions & {
+			-webkit-transition: top 500ms ease;
+			-moz-transition: top 500ms ease;
+			-o-transition: top 500ms ease;
+			transition: top 500ms ease;
+		}
+	}
+}

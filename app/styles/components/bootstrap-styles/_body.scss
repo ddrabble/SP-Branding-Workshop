@@ -1,0 +1,42 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: $color-text;
+
+	margin: 0px;
+
+	A {
+		text-decoration: none;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		&:hover, &.active {
+			text-decoration: none;	
+		}
+
+		&.button {
+			display: inline-block;
+			
+			font-size: 20px;
+			line-height: 1em;
+			
+			padding: 10px 20px;
+
+			color: $color-light;
+			border: 1px $color-grey-medium solid;
+			background: $color-primary none;
+
+			&:hover {
+				color: $color-grey-medium;
+				border: 1px $color-grey-dark solid;
+			}
+		}
+	}
+
+	P {
+		margin-bottom: 21px;
+	}
+}

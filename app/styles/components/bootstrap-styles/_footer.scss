@@ -1,0 +1,202 @@
+/*footer*/
+FOOTER {
+	padding-top: 10px;
+
+	background: $color-grey-dark none;
+	color: $color-light;
+
+	A, A:link, A:visited {
+		color: $color-primary;
+	}
+
+	.col-md-4 {
+		H1, H2, H3, H4, H5, H6 {
+			font-weight: normal;
+			margin-bottom: 20px;
+			padding-bottom: 0;
+			padding-top: 0;
+			text-align: center;
+
+			color: $color-light;
+		}
+	}
+
+	.contact {
+		margin: 0px;
+		padding: 0px;
+		list-style: none inside none;
+
+		LI {
+			padding: 0px 0px 0px 40px;
+			margin: 0px 0px 15px;
+		
+			list-style: none inside none;
+
+			background: transparent url('/images/icon-contact.png') no-repeat 0px 0px;
+			color: $color-primary;
+
+			&.phone {
+				background-position: 7px 3px;
+			}
+			&.email {
+				background-position: 7px -29px;
+			}
+			&.fb {
+				background-position: 7px -61px;
+			}
+		}
+	}
+
+	.recent-post {
+		padding: 0px 0px 15px;
+
+		> A {
+			display: block;
+			float: left;
+			padding-right: 10px;
+		}
+	}
+
+	.footer-bottom  {
+		background: $color-dark none;
+		font-size: 14px;
+
+		P {
+			margin: 0px;
+			padding: 0px;
+			font-size: 13px;
+		}
+
+		LI {
+			font-size: 13px;
+		}
+
+		.container-fluid {
+			padding: 15px;
+		}
+
+		.wrapper {
+			padding: 15px 0px;
+		}
+
+		.copyright {
+			float: left;
+			display: inline-block;
+			min-height: 0px;
+			width: 100%;
+		}
+
+		.sitemap {
+			float: left;
+			display: inline-block;
+			min-height: 0px;
+			margin-top: 10px;
+			padding-top: 10px;
+			width: 100%;
+
+			border-top: 1px solid $color-grey-dark;
+
+			text-align: left;
+
+			UL, LI {
+				margin: 0px;
+				padding: 0px;
+				list-style: none inside none;
+			}
+
+			LI {
+				display: block;
+				padding: 0 0 5px 0px;
+
+				border: medium none;
+
+				line-height: 1em;
+
+				&:first-child {
+					border-left: none;
+				}
+
+				A, A:link, A:visited {
+					color: $color-light;
+					font-size: inherit;
+
+					&:hover {
+						color: $color-primary;
+					}
+				}
+			}
+		}
+	}
+}
+/*end footer*/
+
+
+/* Tweet widget CSS */
+.tweet, .query { }
+.tweet .tweet_list, .query .tweet_list {
+	-webkit-border-radius: .5em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+}
+.tweet .tweet_list .awesome,.tweet .tweet_list .epic,.query .tweet_list .awesome,.query .tweet_list .epic {
+	text-transform: uppercase;
+}
+.tweet .tweet_list li, .query .tweet_list li {
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 1em ;
+	background-image: url(../img/icon-bird.png);
+	background-repeat: no-repeat;
+	background-position: 6px 19px;
+	padding-left: 40px;
+}
+.tweet a,.query  a {
+}
+.tweet .tweet_list .tweet_odd,.query .tweet_list .tweet_odd {
+	background-color: rgba(0,0,0,0.2);
+}
+.tweet .tweet_list .tweet_avatar,.query .tweet_list .tweet_avatar {
+	padding-right: .5em;
+	float: left;
+}
+.tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img {
+	vertical-align: middle;
+}
+/*end tweets*/
+
+
+
+
+
+
+/*responsive media queries*/
+@media screen and (min-width: 480px) {
+
+	footer .footer-bottom .sitemap {
+		border-top: none;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	footer .footer-bottom .sitemap li {
+		border-left: 1px solid #FFFFFF;
+		display: inline-block;
+		line-height: 1em;
+		padding: 0px 5px 0px 9px;
+	}
+	footer .footer-bottom .sitemap li:first-child {
+		border-left: medium none;
+		padding-left: 0px;
+	}
+}
+@media screen and (min-width: 768px) {
+
+	footer .footer-bottom  .copyright {
+		width: 50%;
+	}
+	footer .footer-bottom  .sitemap {
+		width: 50%;
+		text-align: right;
+	}
+}

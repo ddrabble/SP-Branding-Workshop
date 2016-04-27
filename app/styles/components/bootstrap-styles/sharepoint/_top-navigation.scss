@@ -1,0 +1,371 @@
+/*top nav*/
+NAV {
+	&#topnav {
+		position: relative;
+		width: 100%;
+		height: 52px;
+
+		margin-top: 0;
+	
+		z-index: 99;
+
+		@media screen and (min-width: 768px) {
+			height: 59px;
+		}
+
+		> .container {
+			padding-left: 0px;
+			padding-right: 0px;
+
+			> .row {
+				margin-left: 0px;
+				margin-right: 0px;
+
+				> div[class^="col-"] {
+					padding: 0px;
+				}
+			}
+		}
+
+		.ms-core-listMenu-horizontalBox {
+			display: block;
+		}
+
+		.navbar {
+			position: relative;
+			margin-bottom: 0;
+			padding: 0px;
+			
+
+			background-color: $color-grey-extra-extra-dark;
+
+			border-radius: 0px;
+			-moz-border-radius: 0px;
+			-webkit-border-radius: 0px;
+		}
+
+		.navbar-inner {
+		    padding-left: 0.9375rem;
+		    padding-right: 0.9375rem;
+		}
+
+		.navbar-toggler {
+    		padding: 9px 10px;
+    		margin-top: 8px;
+    		margin-right: 0px;
+    		margin-bottom: 8px;
+
+    		color: $color-light;
+    		border: 1px solid $color-grey-dark;
+
+    		border-radius: 4px;
+
+    		min-width: 0px;
+
+    		&:hover, &:focus {
+    			cursor: pointer;
+    			background-color: $color-grey-dark;
+    		}
+		}
+		.navbar-collapse {
+			clear: both;
+
+			@media screen and (min-width: 768px) {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+
+			&.in {
+				overflow-y: visible;
+				display: block;
+			}
+		}
+
+		.nav {
+			@include clearfix();
+			display: none;
+
+			@media screen and (min-width: 768px) {
+				display: block;
+			}
+
+			UL {
+				float: none;
+				list-style: none outside none;
+				margin: 0;
+				padding: 0;
+
+				//only the top most level of navigation
+				&.root {
+					display: block;
+					position: relative;
+					text-align: left;
+
+					> LI {
+						position: relative;
+						display: block;
+						float: none;
+						height: auto;
+						
+						color: $color-grey-extra-dark;
+						vertical-align: top;
+						
+						white-space: nowrap;
+						border-right: medium none;
+						border-top: 1px solid $color-grey-extra-dark;
+						background: transparent none;
+
+						@media screen and (min-width: 768px) {
+							position: relative;
+							display: inline-block;
+							float: left;
+							height: 59px;
+
+							border-top: none;
+
+							vertical-align: top;
+							white-space: nowrap;
+						}
+
+						&:first-child {
+							padding: 15px 0px;
+							height: auto;
+
+							@media screen and (min-width: 768px) {
+								height: 59px;
+								padding: 15px 20px 16px 5px;
+							}
+
+							> A, > .menu-item {
+								height: 28px;
+								width: 28px;
+								padding: 0px;
+								left: 20px;
+								margin-right: 20px;
+								
+								text-indent: 1000%;
+								white-space: nowrap;
+								overflow: hidden;
+								vertical-align: top;
+
+								border: 0px solid transparent;
+
+								background: transparent url('/images/icon-home.png') no-repeat 0px 0px;
+								
+								-webkit-transition: all 0s ease;
+								-moz-transition: all 0s ease;
+								-o-transition: all 0s ease;
+								transition: all 0s ease;
+
+								@media screen and (min-width: 768px) {
+									display: inline-block;
+									padding: 0px;
+									left: 0px;
+
+									font-size: 18px;
+									
+									line-height: 1em;
+								}
+
+								&:hover {
+									background-position: 0px -28px;
+								}
+							}
+						}
+
+						//when top level item is hovered over
+						&:hover {
+							> A {
+								color: $color-primary;
+							}
+
+							> UL {
+								display: block;
+							}
+						}
+
+						> A {
+							position: relative;
+							display: block;
+							padding: 21px 20px 21px;
+							height: 59px;
+
+							color: $color-light;
+							
+							font-size: 18px;
+							line-height: 1em;
+
+							&:hover {
+								color: $color-primary;
+							}
+						}
+
+						//2+ level static
+						UL.static {
+							position: relative;
+							display: block;
+							left: 0px;
+							margin-top: 0px;
+							
+							text-align: left;
+							white-space: nowrap;
+							
+							border: none;
+
+							@media screen and (min-width: 768px) {
+								display: inline-block;
+								top: -15px;
+
+								> LI.static {
+									&:first-child {
+										border-left: 1px solid $color-grey-extra-dark;
+									}	
+								}
+							}
+
+							
+						}
+
+						LI.static {
+							position: relative;
+
+							display: block;
+
+							@media screen and (min-width: 768px) {
+								display: inline-block;
+							}
+
+							&:first-child {
+
+							}
+							&:hover, &.hover {
+								> UL.dynamic {
+									display: block;
+								}
+							}
+
+							A.static, SPAN.static {
+								display: block;
+								padding: 17px 20px 17px;
+								margin: 0px;
+								
+								border: 0px solid transparent;
+								
+								font-size: 18px;
+								color: $color-light;
+
+								text-transform: uppercase;
+
+								&:hover {
+									color: $color-primary;
+								}
+
+								@media screen and (min-width: 768px) {
+									border-right: 1px solid $color-grey-extra-dark;
+								}
+							}
+
+							A.dynamic {
+								display: block;
+								padding: 19px 20px 20px;
+								
+								font-size: 18px;
+								color: $color-light;
+								background: none repeat scroll 0 0 $color-grey-dark;
+
+								@media screen and (min-width: 768px) { 
+									background: none repeat scroll 0 0 $color-grey-dark;
+								}
+							}
+
+							.additional-background {
+								display: block;
+							}
+
+							LI.dynamic {
+								&:first-child {
+									> A.dynamic, > SPAN {
+										border-top: 0px solid transparent;
+									}
+								}
+							}
+
+						}
+
+						//3+level drop down
+						UL.dynamic {
+							left: 0px !important;
+							top: 0px !important;
+
+							margin-left: 20px;
+
+							display: none;
+
+							position: relative;
+
+							border: 0px solid transparent;
+
+							box-shadow: none;
+
+							width: auto !important;
+
+							@media screen and (min-width: 768px) {
+								position: absolute;
+
+								left: 0px !important;
+								top: 59px !important;
+
+								margin-left: 0px;
+
+								border: 1px solid $color-dark;
+							}
+
+							> LI {
+								border-color: $color-dark;
+								border-style: solid;
+								border-width: 1px 0px 0px 0px;
+
+								&:first-child {
+									border-width: 0px;
+								}
+
+								&:hover {
+									> A, > SPAN {
+										color: $color-primary;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.site-access {
+		position: absolute;
+		left: 10px;
+		top: 6px;
+		right: auto;
+
+		@include clearfix();
+
+		@media screen and (min-width: 768px) {
+			left: auto;
+			right: 0px;
+			top: 8px;
+		}
+
+		UL, LI {
+			margin: 0px;
+			padding: 0px;
+			list-style: none inside none;
+		}
+
+		LI {
+			float: left;
+			padding-left: 0px;
+			padding-right: 10px;
+		}
+	}
+}

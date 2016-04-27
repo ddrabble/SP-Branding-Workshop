@@ -1,0 +1,173 @@
+HEADER {
+	border-top: 7px $color-secondary solid;
+	background: transparent none;
+	min-height: 100px;
+
+	> .container, > .container-fluid {
+		position: relative;
+	}
+
+	.col-md-8, .col-sm-8 {
+		@media screen and (min-width: 768px) {
+			padding-left: 0;
+		}
+	}
+
+
+	#logo {
+		display: inline-block;
+		width: 50%;
+
+		@media screen and (min-width: 992px) {
+			width: auto;
+		}
+
+		IMG {
+			display: block;
+			height: auto;
+		    max-width: 100%;
+		    width: 100%;
+			margin: 10px 0 0 0px;
+
+			@media screen and (min-width: 768px) {
+				display: block;
+				height: auto;
+				max-width: 100%;
+				width: 100%;
+				margin: 20px 0 20px 5px;
+			}
+
+			@media screen and (min-width: 992px) {
+				width: auto;
+			}
+		}
+	}
+
+	.tagline {
+		display: block;
+		
+		min-height: 0;
+		margin: 5px 0px;
+		padding: 0;
+		
+		vertical-align: top;
+
+		background: none repeat scroll 0 0 transparent;
+
+		@media screen and (min-width: 480px) {
+			background: url("../images/divider-tagline.png") no-repeat scroll 0 0 transparent;
+			display: inline-block;
+			margin: 20px 0 0;
+			min-height: 45px;
+			padding: 10px 0 10px 10px;
+			vertical-align: top;
+		}
+
+		H2 {
+			font-family: mensch, Helvetica, Arial, sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+			line-height: 1.3em;
+			line-height: 1em;
+
+			color: $color-primary;
+
+			margin: 0px;
+			padding: 0px;
+
+			@media screen and (min-width: 768px) {
+				font-size: 20px;
+			}
+
+			SPAN {
+				color: $color-text;
+			}
+		}
+	}
+
+	.searchbox {
+		position: relative;
+		float: none;
+
+		bottom: auto;
+		right: auto;
+		width: 100%;
+
+		margin: 10px 0px;
+
+		text-align: left;
+
+		@media screen and (min-width: 768px) {
+			bottom: auto;
+			right: auto;
+			position: relative;
+			float: right;
+			margin-top: 60px;
+			text-align: left;
+			width: 260px;
+		}
+
+		A {
+			box-sizing: content-box;
+			-moz-box-sizing: content-box;
+			-webkit-box-sizing: content-box;
+
+			display: inline-block;
+			float: right;
+
+			height: 24px;
+			width: 22px;
+			
+			padding: 7px 0px 5px;
+			margin-right: 2%;
+			vertical-align: top;
+			
+			-webkit-transition: all 0s ease;
+			-moz-transition: all 0s ease;
+			-o-transition: all 0s ease;
+			transition: all 0s ease;
+			
+			background: transparent url('../images/icon-search.png') no-repeat 0px 7px;
+
+			&:hover {
+				background-position: 0px -69px;
+			}
+
+			IMG {
+				display: none;
+			}
+		}
+	}
+
+	#searchInputBox {
+		height: 38px;
+		
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius:5px;
+		
+		background: $color-grey-light none;
+		border: 1px $color-grey-medium solid;
+		
+		INPUT[type=text] {
+			display: inline-block;
+			width: 80%;
+			height: 36px;
+
+			border: 0px;
+			padding: 5px 10px;
+			
+			font-size: 16px;
+			line-height: 1em;
+			vertical-align: top;
+			
+			color: $color-grey-dark;
+			background: transparent none;
+
+			box-shadow: none;
+			transition: none;
+			-moz-transition: none;
+			-webkit-transition: none;
+		}
+	}
+}

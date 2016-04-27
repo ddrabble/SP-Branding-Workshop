@@ -1,0 +1,57 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	//line-height: 1.5em; //set only in our content areas so is not a part of default SP Content such as ribbon
+	color: $color-text;
+
+	margin: 0px;
+
+	//set the default line height only in our repsonsive containers
+	.container, .container-fluid {
+		line-height: 1.5em;
+	}
+
+	A {
+		text-decoration: none;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		&:hover, &.active {
+			text-decoration: none;	
+		}
+
+		&.button {
+			display: inline-block;
+			
+			font-size: 20px;
+			line-height: 1em;
+			
+			padding: 10px 20px;
+
+			color: $color-light;
+			border: 1px $color-grey-medium solid;
+			background: $color-primary none;
+
+			&:hover {
+				color: $color-grey-medium;
+				border: 1px $color-grey-dark solid;
+			}
+		}
+	}
+
+	P {
+		margin-bottom: 21px;
+	}
+}
+
+//ribbon --NOTE!!! This may change so be forewarned
+.o365cs-base.o365cs-topnavBGColor-2 {
+	background-color: $color-dark !important;
+}
+
+//remove the bottom padding added to SP wrapper
+#s4-bodyContainer {
+    padding-bottom: 0px;
+}
